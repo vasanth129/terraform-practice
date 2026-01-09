@@ -5,10 +5,10 @@ resource "aws_instance" "name" {
 }
 
 resource "aws_s3_bucket" "name" {
-    bucket = "myownbucket-0000123"
+    bucket = "kabali-remote-state-file"
     region = "ap-south-1"
     tags = {
-        "Name" = "myownbucket"
+        "Name" = "kabali-state-file"
         "Env" = "Dev"
     }
 }
