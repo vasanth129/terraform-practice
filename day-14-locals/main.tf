@@ -11,7 +11,7 @@ locals {
 
     # Process the subnet list
     primary_public_subnet = var.subnet_ids[0]
-    subnet_count          = length(var.subnet_ids)
+    # subnet_count          = length(var.subnet_ids)
 
      # Environmental deployment settings
     is_production      = var.environment == "prod"
